@@ -1,0 +1,399 @@
+#ilinks {
+    display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+  
+}
+#ilinks:hover {
+   
+    filter: brightness(150%);
+    transform: scale(1.1);
+}
+.icon-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.i-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+    float: right;
+}
+
+
+
+
+body {
+    background-color: #13111c;
+    color: white;
+    font-family: Outfit, sans-serif;
+}
+/*
+#page{
+    margin: 20px;
+    float: right;
+   font-size:x-large;
+}
+   */
+a:visited {
+    color: white;
+  }
+a:link{
+    text-decoration: none;
+}
+
+
+
+#pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    clear: both;
+    margin-top: 30px;
+    width: 500px;
+    height: auto;
+    transition: all 1.5s ease;
+}
+#pic:hover {
+    color: #111;
+    filter:drop-shadow(0 0 250px rgb(158, 28, 197));
+    filter: brightness(250%);
+    transform: scale(1.5);
+   
+} 
+
+#hi1{
+    font-size: 120px;
+    text-align: center;
+    margin-top: -90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 30px rgb(158, 28, 197);
+    filter:drop-shadow(0 0 100px rgb(158, 28, 197));
+}
+#hi2{
+    font-size: 60px;
+    text-align: center;
+    margin-top: -90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 30px rgb(158, 28, 197);
+    filter:drop-shadow(0 0 100px rgb(158, 28, 197));
+}
+
+
+#pic2{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+    width: 1000px;
+    height: auto;
+}
+
+#catch{
+    margin-top: 95px;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+    font-size: 38px;
+}
+#catch2{
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    line-height: 150%;
+    font-family: Outfit, sans-serif;
+    color: rgba(223, 223, 223, 0.9);
+    margin-bottom: 300px;
+}
+
+.glow-button {
+    color: white; /* Blue text color */
+    text-decoration: none; /* Removes underline from links */
+    font-size: x-large; /* Increases font size */
+    padding: 12px 24px; /* Adds padding inside the button */
+    border: none;/* Initial transparent border */
+    border-radius: 50px; /* Rounds the corners */
+    /*transition: all 0.3s ease; /* Smooth transition for all properties */
+    position: relative; /* Required for pseudo-element positioning */
+    float: right;
+    margin-top: 35px;
+    
+}
+
+.glow-button::before {
+    content: ''; /* No content */
+    position: absolute; /* Absolute positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px; /* Matches border-radius of the button */
+    background: rgb(158, 28, 197); /* Blue glow effect */
+    filter: blur(10px); /* Blurs the glow effect */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    z-index: -1; 
+   
+}
+
+.glow-button:hover::before {
+    opacity: 1; /* Makes the glow effect visible on hover */
+   
+}
+
+.glow-button:hover {
+    color: black; /* Changes text color to white on hover */
+    border-color: transparent; /* Adds blue border on hover */
+   
+}
+
+#about{
+    margin-top: 100px;
+        font-size: 50px;
+            color: #00D4FF;
+            text-shadow: 0 0 10px #00D4FF;
+            text-align: center;
+    
+}
+#about2{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 30px;
+    line-height: 1.5;
+    text-align: center;
+
+    
+    
+}
+
+
+
+#sol{
+    display: block;
+    margin: 20px auto;
+    max-width: 20%; /* Resize to 20% of original size */
+    height: auto;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+#sol:hover {
+    filter: brightness(150%);
+    transform: scale(1.05);
+}
+#sol1{
+    display: block;
+    margin: 20px auto;
+    max-width: 30%; /* Resize to 20% of original size */
+    height: auto;
+    transition: filter 0.4s ease, transform 0.4s ease;
+    float: right;
+}
+#sol1:hover {
+    filter: brightness(150%);
+    transform: scale(1.05);
+}
+/* .container {
+    
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px solid #00D4FF;  
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00D4FF;  
+    background: rgba(0, 0, 0, 0.85);
+}
+*/
+.container {
+   
+   width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.content {
+    
+     width: 65%;
+    border: 2px solid #ff6ec7;
+    margin: auto;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff6ec7;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6ec7;
+    padding-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature h4 {
+    font-size: 1.2em;
+    color: #ff6ec7;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.tokenomics-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.tokenomics-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tokenomics-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tokenomics-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tokenomics-list li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 25px;
+}
+
+.tokenomics-list li::before {
+    content: '\2022'; /* Bullet character */
+    color: #00D4FF; /* Bullet color */
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+@media (max-width: 768px) {
+    .tokenomics-container {
+        padding: 20px;
+    }
+
+    .tokenomics-header h1 {
+        font-size: 2.5em;
+    }
+}
+.button-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid #00D4FF;
+    color: #00D4FF;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s, background-color 0.3s;
+  
+   margin-top: 100px;
+   
+}
+
+.button::before {
+    content: 'Coming Soon';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff0000;
+    color: black;
+    padding: 8px 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    color: black;
+    background-color: #00D4FF;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+#hz{
+    margin-top: 50px;
+    margin-bottom: 1000px;
+    margin-left: 100px;
+}
+#risk {
+    text-align: center;
+    color:rgb(100, 97, 97);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
